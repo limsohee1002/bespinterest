@@ -72,3 +72,12 @@ now go to http://localhost:3000/
 * Axios
 * Express
 * Node.js
+
+## Authors
+* Sohee Lim
+* Samuel Kwak
+* Yusaky Kasahara
+* Jimmy Sandrs-Cannon
+
+## License
+This project is licensed under the MIT License
