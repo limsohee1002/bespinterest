@@ -63,7 +63,7 @@ in terminal
 ```
 now go to http://localhost:3000/
 
-## Tech Stacks
+## Tech Stack
 * Javascript
 * React
 * React Router
