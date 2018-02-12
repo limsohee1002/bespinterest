@@ -1,7 +1,7 @@
-# brevity
+# bespinterest
 Application for sharing and managing images on a personal board
 
-demo
+![bespin-demo2](https://user-images.githubusercontent.com/30321742/36122836-d2737c80-1018-11e8-9900-545c00d3327d.gif)
 
 ## Code Example
 
