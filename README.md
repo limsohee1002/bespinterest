@@ -9,18 +9,18 @@ Application for sharing and managing images on a personal board
 
 ```JS
 board: {
-		get: function(req, res) {
+  get: function(req, res) {
       let reqParams = url.parse(req.url, true).query;
-			reqParams.boardId === '-1'
-				? db.Post
-						.findAll()
-						.then(function(data) {
-							res.status(200).send(data);
-						})
-						.catch(function(err) {
-							console.log(err);
-							res.sendStatus(400);
-						})
+      reqParams.boardId === '-1'
+        ? db.Post
+            .findAll()
+            .then(function(data) {
+              res.status(200).send(data);
+            })
+            .catch(function(err) {
+              console.log(err);
+              res.sendStatus(400);
+            })
         : db.sequelize.query(`SELECT * FROM posts INNER JOIN boardposts ON boardposts."boardId" = ${reqParams.boardId} AND posts.id = boardposts."postId"`)
             .then(function(data) {
               res.status(200).send(data[0]);
@@ -29,8 +29,8 @@ board: {
               console.log(err);
               res.sendStatus(400);
             });
-		}
-	},
+    }
+  },
 
 ```
 #### Fetching item associated with board
